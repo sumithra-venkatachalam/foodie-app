@@ -5,7 +5,7 @@ import OrderPage from "./containers/order_page/OrderPage";
 import UsernameProvider from "./context/UsernameProvider";
 import "./App.css"
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -13,14 +13,14 @@ import {
 function App() {
   return (
     <UsernameProvider>
-    <HashRouter>
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/restaurant-listing" element={<RestaurantListing/>} />
       <Route path="/order-page/:orderId" element={<OrderPage/>}/>
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </UsernameProvider>
     
   )

@@ -1,0 +1,79 @@
+.leftImage img {
+    height: 100vh;
+    width: 65vw;
+    position: relative;
+}
+
+.wholePage {
+    display: flex;
+}
+
+.rightText {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 35vw;
+
+}
+
+.rightText input {
+    width:24vw;
+    height: 35px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+
+.signupButton {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 25vw;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.logoImage img {
+    width: 300px;
+    height: 150px;
+
+} 
+
+.bottomText .log {
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.bottomText {
+    margin-top: 10px;
+}
+
+.signupButton {
+    cursor: pointer;
+}
+
+.logoImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightText h1 {
+    color: gray;
+}
+
+.signupErrorMessage{
+    color: red;
+    margin-top: 2px;
+}
+
+.signupInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,106 @@
+.leftImage img {
+    height: 100vh;
+    width: 65vw;
+    position: relative;
+}
+
+.entirePage {
+    display: flex;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide {
+    /* position: relative;
+    left: 65px; */
+
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    width: 35vw;  
+}
+
+.rightSide input {
+    /* width:120%; */
+    height: 40px; 
+    width: 24vw;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+.rightSide img {
+    width: 400px;
+    height: 250px;
+}
+.rightSide button {
+    /* width: 126%; */
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+   
+
+}
+
+.rightSide h1 {
+    color: gray;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+.forgot {
+    margin-top: 20px;
+}
+
+.account{
+    margin-top: 20px;
+}
+
+.forgot .colors {
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.account .colors1 {
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.colors2 {
+    color: gray;
+}
+
+.errorMessage {
+    color: tomato;
+    margin-top: 10px;
+    
+}
+
+.signinButton {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.inputAndError1 {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.inputAndError2 {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
+

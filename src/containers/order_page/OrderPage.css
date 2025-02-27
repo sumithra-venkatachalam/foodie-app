@@ -1,0 +1,195 @@
+.name {
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.allArea {
+
+    width: 300px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.order {
+    margin-left: 50px; 
+}
+
+.headerBelow {
+    margin-left: 50px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("https://static.rigg.uk/Files/casestudies/bistrotpierretables/sz/w960/bistrolargeroundrestauranttablewoodtopmetalbase.jpg");
+    border-radius: 6px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.headerBelow h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.headerBelow p {
+    font-size: 30px;
+    margin: 20px 0px;  
+}
+
+.headerBelow button {
+    background-color: rgb(251, 65, 65);
+    color: white;
+    width: 130px;
+    height: 40px;
+    outline: none;
+    border-radius: 2px;
+    border-color:rgb(251, 65, 65);
+    font-weight: bolder;
+    font-size: 16px;
+}
+.orderPageRight {
+    width:70%;
+}
+
+.bothPage {
+    display: flex;
+}
+
+.orderPageLeft {
+    margin-left: 30px
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(253, 252, 252);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.popularDish {
+    font-size: 40px;
+}
+.orderMenuImage {
+    width: 300px;
+    height: 200px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.menuItems {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.desc {
+    height: 120px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.eachMenuAddButton {
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgb(251, 65, 65);
+    background-color: white;
+    color: rgb(251, 65, 65);
+    cursor: pointer;
+}
+
+.eachMenuAddButton:hover {
+    background-color: rgb(251, 65, 65);
+    color: white;
+}
+
+.allColumns {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 400px;
+}
+
+.negativeButton, .positiveButton {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.negativeButton:hover {
+    background-color: rgb(251, 65, 65);
+    color: white;
+}
+
+ .negativeButton {
+    border: 1px solid rgb(251, 65, 65);
+    color: rgb(251, 65, 65);
+ }
+
+ .positiveButton {
+    border: 1px solid rgb(15, 147, 15);
+    color:rgb(15, 147, 15);
+ }
+
+ .positiveButton:hover {
+    background-color: rgb(15, 147, 15);
+    color: white;
+}
+
+.inbetweenButton {
+    margin: 0px;
+}
+
+.secondColumn {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cartItemPrice {
+    font-weight: 500;
+}
+
+.selectedMenuTitle {
+    width: 100px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cartDeleteIcon {
+    color: rgb(251, 65, 65);
+    cursor: pointer;
+}
+
+.thirdColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cartEmptyMessage {
+    font-size: 20px;
+    font-weight: 500;
+}

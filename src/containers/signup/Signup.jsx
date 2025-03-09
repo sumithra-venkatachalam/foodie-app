@@ -3,11 +3,27 @@ import common from "../../assets/restaurant-image.jpg";
 import logo from "../../assets/logo.jpg";
 import { useNavigate} from "react-router-dom";
 import {useState} from "react";
+import usernameContext from "../../context/UsernameContext";
+import {useContext} from "react";
 
 function Signup() {
 
+    const [userNameError, setUserNameError] = useState("");
+    const [emailAddressError, setEmailAddressError] = useState("");
+    const [addressError, setAddressError] = useState("");
+    const [passwordError, setPasswordError] = useState("");
+    const [confirmPasswordError, setConfirmPasswordError] = useState("");
+
+    const {username, setUsername} = useContext(usernameContext);
+    const [signupEmail, setSignupEmail] = useState("");
+    const [signupAddress, setSignupAddress] = useState("");
+    const [signupPassword, setSignupPassword] = useState("");
+    const [signupConfirmPassword, setSignupConfirmPassword] = useState("");
+    
+    const navigate = useNavigate();
+
     const usernameFunc = (e) => {
-        setSignupUsername(e.target.value);
+        setUsername(e.target.value);
     }
 
     const emailAddressFunc = (e) => {
@@ -26,34 +42,22 @@ function Signup() {
         setSignupConfirmPassword(e.target.value);
     }
 
-    const [userNameError, setUserNameError] = useState("");
-    const [emailAddressError, setEmailAddressError] = useState("");
-    const [addressError, setAddressError] = useState("");
-    const [passwordError, setPasswordError] = useState("");
-    const [confirmPasswordError, setConfirmPasswordError] = useState("");
-
-    const [signupUsername, setSignupUsername] = useState("");
-    const [signupEmail, setSignupEmail] = useState("");
-    const [signupAddress, setSignupAddress] = useState("");
-    const [signupPassword, setSignupPassword] = useState("");
-    const [signupConfirmPassword, setSignupConfirmPassword] = useState("");
-    
-    const navigate = useNavigate();
+   
 
     const handleSignup = () => {
 
         let hasError = false
 
-        if(signupUsername.length === 0) {
+        if(username.length === 0) {
             hasError = true;
             setUserNameError("UserName is required");
         }
             
-        else if (signupUsername.length < 5) {
+        else if (username.length < 5) {
             hasError = true;
             setUserNameError("Username characters must be greater than 5 characters");
         }
-        else if (signupUsername.length > 25) {
+        else if (username.length > 25) {
             hasError = true;
             setUserNameError("Username characters should be less than 25 characters");
         }

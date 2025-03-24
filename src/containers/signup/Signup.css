@@ -13,6 +13,7 @@
     flex-direction: column; 
     align-items: center;
     width: 35vw;
+    
 
 }
 
@@ -37,9 +38,8 @@
 }
 
 .logoImage img {
-    width: 300px;
-    height: 150px;
-
+    width: 100px;
+    height: 70px;
 } 
 
 .bottomText .log {
@@ -69,7 +69,8 @@
 
 .signupErrorMessage{
     color: red;
-    margin-top: 2px;
+    margin-top: 1px;
+    font-size: 12px;
 }
 
 .signupInput {
@@ -77,3 +78,25 @@
     flex-direction: column;
     margin-bottom: 15px;
 }
+
+@media (max-width: 767px) {
+    .wholePage {
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 40px;
+    }
+    .logoImage img {
+        width: 250px; 
+        height: 120px;
+    }
+    .rightText input {
+        width:60vw;
+    }
+    .bottomText {
+        display: flex;
+        margin-top: 20px;
+    }
+    .SpanText{
+        width: 200px;
+    }
+  }

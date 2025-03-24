@@ -1,5 +1,5 @@
 import {useParams, useNavigate} from "react-router-dom";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import "./OrderPage.css";
 import mockData from "../../utils/mockData.json";
 import {useState} from "react";
@@ -10,7 +10,7 @@ function OrderPage() {
 
     const navigate = useNavigate();
 
-    const {username} = useContext(UsernameContext);
+    const {username} = useContext(UsernameContext); 
 
     const [cartItems, setCartItems] = useState([])
 

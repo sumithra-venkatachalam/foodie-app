@@ -1,6 +1,6 @@
 import {useState} from "react";
 import restaurantImage from "../../assets/restaurant-image.jpg";
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo.png"
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import usernameContext from "../../context/UsernameContext";
@@ -12,7 +12,7 @@ function Login() {
     const [password, setPassword] = useState("");
     const [userNameError, setUserNameError] = useState("");
     const [passwordError, setPasswordError] = useState("");
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     const nameFunc = (e) => {
         setUsername(e.target.value) 

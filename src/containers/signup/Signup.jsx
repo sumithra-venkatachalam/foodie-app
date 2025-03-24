@@ -1,6 +1,6 @@
 import "./Signup.css";
 import common from "../../assets/restaurant-image.jpg";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import { useNavigate} from "react-router-dom";
 import {useState} from "react";
 import usernameContext from "../../context/UsernameContext";
@@ -140,7 +140,7 @@ function Signup() {
             </div>
             <button className="signupButton" onClick={handleSignup}>SIGN UP</button>
             <div className="bottomText">
-            <span>Already have an account?</span>
+            <span className="SpanText">Already have an account?</span>
             <span className="log" onClick={goToLogin}>Login</span>
             </div>
             </div>

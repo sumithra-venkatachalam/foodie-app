@@ -1,5 +1,5 @@
 import "./RestaurantListing.css";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import MockData from "../../utils/mockData.json";
 import {useNavigate} from "react-router-dom";
 import {useContext} from "react";
@@ -8,7 +8,7 @@ import usernameContext from "../../context/UsernameContext";
 
 function RestaurantListing() {
 
-    const {username} = useContext(usernameContext);
+    const {username} = useContext(usernameContext); 
 
     const navigate = useNavigate();  
 
@@ -25,7 +25,7 @@ function RestaurantListing() {
     const datas = MockData.map(x => (
         <div className="allItems" key={x.id}> 
             <img onClick={ () => goToOrder(x.id)} className="images"src={x.feature_image}/>
-            <div>
+            <div className="MobileViewAllText">
             <p className="address">{x.address}</p>
             <p className="cuisines" >{x.cuisines}</p>
             <p className="ratings" >{x.rating} ⭐</p>

@@ -14,13 +14,11 @@
 }
 
 .rightSide {
-    /* position: relative;
-    left: 65px; */
-
     display: flex;
     align-items: center;  
     flex-direction: column;
     width: 35vw;  
+    justify-content: center;
 }
 
 .rightSide input {
@@ -34,8 +32,8 @@
 }
 
 .rightSide img {
-    width: 400px;
-    height: 250px;
+    width: 100px; 
+    height: 70px;
 }
 .rightSide button {
     /* width: 126%; */
@@ -51,7 +49,7 @@
 .rightSide h1 {
     color: gray;
     font-size: 34px;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .forgot {
@@ -82,7 +80,7 @@
 
 .errorMessage {
     color: tomato;
-    margin-top: 10px;
+    margin-top: 2px;
     
 }
 
@@ -104,3 +102,23 @@
     flex-direction: column;
 }
 
+@media (max-width: 767px) {
+    .leftImage img {
+      display: none;
+    }
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .rightSide img {
+        width: 250px; 
+        height: 120px;
+    }
+    .rightSide input {
+        width: 60vw;
+    }
+  }

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    background-color: rgb(251, 65, 65);
+    background-color: rgb(251, 65, 65); 
     height: 70px;
 }
 
@@ -76,3 +76,16 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media (max-width: 767px) {
+   .allItems {
+    display: flex;
+    flex-direction: column;
+   }
+   .images {
+    width: 80vw;
+   }
+   .MobileViewAllText {
+    width: 80vw;
+   }
+  }
